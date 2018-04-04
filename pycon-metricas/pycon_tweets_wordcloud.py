@@ -18,7 +18,8 @@ MASK = path.join(HERE, "python_mask.png")
 STOP_EXTRA = ["PyConColombia2018", "pyconcolombia", "twitter", "pic",
               "Pycon2018", "Python", "https", "PyCon2018pic", "ThePSF",
               "PyConColombia2019", "PyCon", "ColombiaPython", "bit", "ly",
-              "goo", "gl"]
+              "goo", "gl", "1er", "día", "hoy", "today", "mañana",
+              "Segundo", "tarde", "primer", "year", "siempre"]
 BW = "white"
 
 # Read files
@@ -34,7 +35,7 @@ stopwords.update(STOP_EXTRA)
 
 # Generate word cloud
 wc = WordCloud(background_color=BW,
-               max_words=500,
+               max_words=1000,
                mask=python_mask,
                width=3000,
                height=3033,
